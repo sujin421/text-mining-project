@@ -91,6 +91,7 @@ K-NN  | Decision Tree  | SVM 모델
 ### __1) 불용어 사전 및 긍정/부정어 사전 정의__
 * 문서 전체에 포진되어 있어 리뷰 점수에 영향을 미치지 않는 불용어 선언
 <img src="./image/stopwords.png" height="60">
+
 * 꼬꼬마 분석기로 리뷰의 형태소 분석을 진행하여 `1) 불용어가 아니며, 2) 체언, 관형사, 부사`에 해당하면 해당 리뷰와 함께 리스트에 저장
 * 리뷰 점수가 평균 이상이면 긍정 단어, 평균 이하이면 부정 단어로 분류하여 긍정/부정 단어사전 제작
 * (위) 긍정 단어사전 | (아래)부정 단어사전  
@@ -130,8 +131,8 @@ K-NN  | Decision Tree  | SVM 모델
 
 * __Evaluation__  
 <img src="./image/CRF.png" height="130">  
-    ✏ __유의미한 차이를 보이진 않으나, 7가지 학습 모델 중 CRF의 precision이 가장 높게 나옴__
-    
+    __유의미한 차이를 보이진 않으나, 7가지 학습 모델 중 CRF의 precision이 가장 높게 나옴__
+
 * Features별 weigth 확인  
 <img src="./image/eli5.png" height="600">
 
