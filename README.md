@@ -36,7 +36,7 @@
 ---
 ### 기업의 한 줄 리뷰 및 별점 데이터를 딕셔너리 형식으로 `{리뷰: 별점}` 스크래핑
 <img src="./image/scraping.png" height="150">
-<img src="./image/dic_pre.png" height="230">
+<img src="./image/dic_pre.PNG" height="230">
 
 
 <!-- ### 스크래핑 시 __PyKoSpacing__ 라이브러리를 적용하여 리뷰의 띄어쓰기 교정
