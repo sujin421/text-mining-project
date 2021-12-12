@@ -64,7 +64,7 @@
 산업군 | 공공기관 | 금융/은행 | IT | 세무/ 회계
 ---------- | ---------- | ---------- | ---------- | ---------- |
 주요 키워드 | 공공기관, 경험, 공무원, 계약직, 경험, 복지 등 | 연봉, 생각, 성장, 복지, 문화, 추천, 다양 등 | 경험, 추천, 성장, 다양, 개발, 복지, 자유 등 | 회계, 다양, 사무실, 세무, 신입, 세무사, 회계사, 법인 등
-Word Cloud | <img src="./image/pic1.png" height="120"> | <img src="./image/pic2.png" height="120"> | <img src="./image/pic3.png" height="120"> | <img src="./image/pic4.png" height="120">
+Word Cloud | <img src="./image/pic1.png" height="120"> | <img src="./image/pic2.png" height="120"> | <img src="./image/pic3.PNG" height="120"> | <img src="./image/pic4.PNG" height="120">
 
 &nbsp;
 ## __2. 기타 모델 적용__
@@ -134,8 +134,8 @@ K-NN  | Decision Tree  | SVM 모델
     * Cross validation 5로 적용(5개의 train-test model 생성 후 평균)
 
 * __Evaluation__  
-<img src="./image/CRF.png" height="130">
-    * __✏ 유의미한 차이를 보이진 않으나, 7가지 학습 모델 중 CRF의 precision이 가장 높게 나옴__
+<img src="./image/CRF.png" height="130">  
+    __✏ 유의미한 차이를 보이진 않으나, 7가지 학습 모델 중 CRF의 precision이 가장 높게 나옴__
 * Features별 weigth 확인  
 <img src="./image/eli5.png" height="600">
 
