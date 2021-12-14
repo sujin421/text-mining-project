@@ -643,7 +643,7 @@ print(len(X), len(X)*0.7) #train-test split (70%, 30%)
 print(type(X))
 
 
-# In[542]:
+# In[608]:
 
 
 crf = CRF(algorithm='lbfgs',
@@ -653,28 +653,28 @@ crf = CRF(algorithm='lbfgs',
           all_possible_transitions=False)
 
 
-# In[543]:
+# In[609]:
 
 
 # Training
 crf.fit(X[:1786], y[:1786])
 
 
-# In[544]:
+# In[610]:
 
 
 # cross validation
 pred = cross_val_predict(estimator=crf, X=X, y=y, cv=4) 
 
 
-# In[537]:
+# In[598]:
 
 
 # prediction
 y_test_pred = crf.predict(X[1786:])
 
 
-# In[545]:
+# In[611]:
 
 
 # report
@@ -684,7 +684,7 @@ print(report)
 # data + deep learning 적용 시 늘어날 가능성은 있음. 
 
 
-# In[546]:
+# In[612]:
 
 
 # 태그 간의 transition(전이) probabilities, 태그 별 예측에 중요한 features
@@ -1093,17 +1093,17 @@ y_pred_logreg = logreg.predict(X_test)
 print(classification_report(y_test, y_pred_logreg))
 
 
-# In[507]:
+# In[630]:
 
 
 # ANN
-ANN = MLPClassifier(solver='lbfgs', alpha=1, hidden_layer_sizes=(20, 2), random_state=4)
+ANN = MLPClassifier(solver='lbfgs', alpha=2, hidden_layer_sizes=(30, 2), random_state=3)
 ANN.fit(X_train, y_train)
 y_pred_ANN = ANN.predict(X_test)
 print(classification_report(y_test, y_pred_ANN))
 
 
-# In[508]:
+# In[616]:
 
 
 # k-Nearest Neighbor
@@ -1123,7 +1123,7 @@ y_pred_DT = decision_tree.predict(X_test)
 print(classification_report(y_test, y_pred_DT))
 
 
-# In[ ]:
+# In[629]:
 
 
 # SVM
