@@ -29,7 +29,7 @@
 &nbsp;
 
 
-## __🎈 1단계: [리뷰 스크래핑](https://github.com/sujin421/text-mining-project/blob/da393c3d057268a9c07b21d735427d74ae79db26/1.%20Web%20Scarping.ipynb)__ 
+## __🎈 1단계: <a href="https://github.com/sujin421/text-mining-project/blob/da393c3d057268a9c07b21d735427d74ae79db26/1.%20Web%20Scarping.ipynb" target="_blank">리뷰 스크래핑</a>__ 
 ### 기업의 한 줄 리뷰 및 별점 데이터를 딕셔너리 형식으로 `{리뷰: 별점}` 스크래핑
 <img src="./image/scraping.png">
 <img src="./image/dic_pre.PNG" height="250">
@@ -53,7 +53,7 @@
 &nbsp;
 
 ## __🎈 3단계: 데이터 분석__
-## __1. [Word Cloud](https://github.com/sujin421/text-mining-project/blob/11de871e5b9b3d216fc7ed7d1912ec1cf90c29b7/2.%20WordCloud.ipynb)__
+## __1. <a href="https://github.com/sujin421/text-mining-project/blob/11de871e5b9b3d216fc7ed7d1912ec1cf90c29b7/2.%20WordCloud.ipynb" target="_blank">Word Cloud</a>__
 ### 꼬꼬마 분석기를 이용한 형태소 분석을 통해 명사를 추출하여 산업군별 키워드 파악
 산업군 | 공공기관 | 금융/은행 | IT | 세무/ 회계
 ---------- | ---------- | ---------- | ---------- | ---------- |
@@ -61,7 +61,7 @@
 Word Cloud | <img src="./image/pic1.png" height="150"> | <img src="./image/pic2.png" height="150"> | <img src="./image/pic3.PNG" height="150"> | <img src="./image/pic4.PNG" height="150">
 
 &nbsp;
-## __2. [기타 모델 적용](https://mybinder.org/v2/gh/sujin421/text-mining-project/da393c3d057268a9c07b21d735427d74ae79db26?filepath=3.%20Review%20Classification(CRF%2C%20etc.).ipynb)__
+## __2. <a href="https://mybinder.org/v2/gh/sujin421/text-mining-project/da393c3d057268a9c07b21d735427d74ae79db26?filepath=3.%20Review%20Classification(CRF%2C%20etc.).ipynb" target="_blank">기타 모델 적용</a>__
 ### 수업 시간에 다룬 Review Classification(영화 리뷰 감성 분류) 기반 긍정/부정 리뷰의 빈도수를 활용하여 6가지 모델로 학습 후 결과 확인
 ### __1) 데이터 전처리__
 * POS tag 중 ‘E’(어미), ‘J’(조사), ‘S’(부호 외래어)로 시작하는 token 제거
