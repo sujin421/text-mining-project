@@ -29,7 +29,7 @@
 &nbsp;
 
 
-## __🎈 1단계: 리뷰 스크래핑__
+## __🎈 1단계: [리뷰 스크래핑](https://github.com/sujin421/text-mining-project/blob/da393c3d057268a9c07b21d735427d74ae79db26/1.%20Web%20Scarping.ipynb)__ 
 ### 기업의 한 줄 리뷰 및 별점 데이터를 딕셔너리 형식으로 `{리뷰: 별점}` 스크래핑
 <img src="./image/scraping.png">
 <img src="./image/dic_pre.PNG" height="250">
@@ -53,7 +53,7 @@
 &nbsp;
 
 ## __🎈 3단계: 데이터 분석__
-## __1. Word Cloud__
+## __1. [Word Cloud](https://github.com/sujin421/text-mining-project/blob/11de871e5b9b3d216fc7ed7d1912ec1cf90c29b7/2.%20WordCloud.ipynb)__
 ### 꼬꼬마 분석기를 이용한 형태소 분석을 통해 명사를 추출하여 산업군별 키워드 파악
 산업군 | 공공기관 | 금융/은행 | IT | 세무/ 회계
 ---------- | ---------- | ---------- | ---------- | ---------- |
@@ -61,7 +61,7 @@
 Word Cloud | <img src="./image/pic1.png" height="150"> | <img src="./image/pic2.png" height="150"> | <img src="./image/pic3.PNG" height="150"> | <img src="./image/pic4.PNG" height="150">
 
 &nbsp;
-## __2. 기타 모델 적용__
+## __2. [기타 모델 적용](https://mybinder.org/v2/gh/sujin421/text-mining-project/da393c3d057268a9c07b21d735427d74ae79db26?filepath=3.%20Review%20Classification(CRF%2C%20etc.).ipynb)__
 ### 수업 시간에 다룬 Review Classification(영화 리뷰 감성 분류) 기반 긍정/부정 리뷰의 빈도수를 활용하여 6가지 모델로 학습 후 결과 확인
 ### __1) 데이터 전처리__
 * POS tag 중 ‘E’(어미), ‘J’(조사), ‘S’(부호 외래어)로 시작하는 token 제거
@@ -131,12 +131,11 @@ K-NN  | Decision Tree  | SVM 모델
     * Cross validation 5로 적용(5개의 train-test model 생성 후 평균)
 
 * __Evaluation__  
-    __✏ 유의미한 차이를 보이진 않으나, 7가지 학습 모델 중 CRF의 precision이 가장 높게 나옴__
-<img src="./image/CRF.png" height="130">  
+    __✏ 유의미한 차이를 보이진 않으나, 7가지 학습 모델 중 CRF의 precision이 가장 높게 나옴__  
+    <img src="./image/CRF.png" height="130">  
 
-* Features별 weigth 확인  
-__✏ 리뷰에서 추출하여 직접 만든 긍정/부정어 사전이 가장 높은 weight를 가지는 것을 알 수 있음__
-<img src="./image/eli5.png" height="700">  
+* __Features별 weigth 확인__  
+    __✏ 리뷰에서 추출하여 직접 만든 긍정/부정어 사전이 가장 높은 weight를 가지는 것을 알 수 있음__ <img src="./image/eli5.png" height="700">  
 
 ## __🎈 4단계: 모델 실행 결과 분석__
 ### __1) 분석 대상의 특성 및 전처리, 적용한 속성에 따라 기대보다 낮은 예측치 산출__
@@ -147,7 +146,7 @@ __✏ 리뷰에서 추출하여 직접 만든 긍정/부정어 사전이 가장 
 * 또한, 부정 리뷰에서 사용되었을 수 있는 반어법을 검증하기 어렵고 한국어는 맞춤법을 지키지 않고 소리나는 대로 표현하여도 뜻이 통하기 때문에 이를 학습 모델이 판별하기 어려움
 ### __3) 발전 및 개선 방향__
 * Classification 수행 시 리뷰 점수 평균치를 기준으로 분류하는 것이 아닌 중간 점수의 리뷰를 제외하고 점수가 아주 높고 아주 낮은 리뷰에서 빈도수 상위 단어를 추출하여 긍정/부정 단어 사전으로 활용하여 한계 극복
-* CRF 모델 수행 시 잡플래닛 외에 사람인 등 다른 사이트의 정보에 적용에도 일반적으로 통용될 수 있는  features를 추가하여 성능 향상 기대
+* CRF 모델 수행 시 잡플래닛 외에 사람인 등 다른 사이트의 정보에 적용해도 일반적으로 통용될 수 있는  features를 추가하여 성능 향상 기대
 * 기타 모델에 비해 CRF의 정확도가 다소 높았지만, 80% 이상의 높은 정확도 확보를 위해 분류 기준을 다양하게 시도해 볼 필요가 있음(class 3개 이상, score 외 다른 정보 이용)
 * 이번 프로젝트에서 시행한 분석 방법 외에 직군별 주요 리뷰 요약(summarization) 시도해볼 만함.
 * 재직자의 리뷰가 갖는 특성을 살려 공개되어 있는 공시 정보 외의 일상적, 사적 정부를 얻을 경우 더 유의미하고 가치 있는 정보가 될 것임.
